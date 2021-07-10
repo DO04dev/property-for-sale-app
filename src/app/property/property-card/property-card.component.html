@@ -1,24 +1,8 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4 p-3">
-    <div class="card">
-      <img class="propImg" src="assets/images/house_default.png" />
-      <div class="card-body p-2">
-        <h2>Properties</h2>
-        <h1>{{ Property.Name }}</h1>
-        <h1>{{ Property.Type }}</h1>
-        <h1>{{ Property.Price }}</h1>
-      </div>
-    </div>
-  </div>
-  <div class="shadow-lg col-sm-4 p-3">
-    <div class="card">
-      <img class="propImg" src="assets/images/house_default.png" />
-      <div class="card-body p-2">
-        <h2>Bad Practice</h2>
-        <h1>{{ Property.Name }}</h1>
-        <h1>{{ Property.Type }}</h1>
-        <h1>{{ Property.Price }}</h1>
-      </div>
-    </div>
+<div class="card">
+  <img class="propImg" src="assets/images/house_default.png" />
+  <div class="card-body p-2">
+    <h4>{{ property.Name }}</h4>
+    <p>{{ property.Type }}</p>
+    <h6>{{ property.Price }}</h6>
   </div>
 </div>
