@@ -1,3 +1,4 @@
+import { HousingService } from './services/housing.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,7 +19,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    HousingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
