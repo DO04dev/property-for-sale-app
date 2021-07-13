@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyListComponent implements OnInit {
 
-  properties: any;
+  properties: Array<any>;
 
   constructor(private housingService: HousingService) { }
 
