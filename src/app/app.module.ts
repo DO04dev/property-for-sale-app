@@ -12,6 +12,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const appRoutes: Routes = [
   { path: '', component: PropertyListComponent },
+  { path: 'rent-property', component: AddPropertyComponent },
   { path: 'add-property', component: AddPropertyComponent }
 ];
 
