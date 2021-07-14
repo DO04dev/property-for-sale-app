@@ -10,9 +10,10 @@ import { PropertyCardComponent } from './property/property-card/property-card.co
 import { PropertyListComponent } from './property/property-list/property-list.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
-const appRoutes: Routes = [{
-  path: 'add-property', component: AddPropertyComponent
-}];
+const appRoutes: Routes = [
+  { path: '', component: PropertyListComponent },
+  { path: 'add-property', component: AddPropertyComponent }
+];
 
 @NgModule({
   declarations: [
