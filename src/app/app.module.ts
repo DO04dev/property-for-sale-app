@@ -1,3 +1,4 @@
+import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { HousingService } from './services/housing.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -13,7 +14,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
-    NavBarComponent
+    NavBarComponent,
+    NavBarComponent,
+    AddPropertyComponent
    ],
   imports: [
     BrowserModule,
