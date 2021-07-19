@@ -13,10 +13,15 @@ export class PropertyDetailComponent implements OnInit {
 
   ngOnInit() {
     this.propertyId = +(this.route.snapshot.params['Id']);
+    this.route.params.subscribe(
+      (params) => {
+        this.propertyId = +(params['Id']);
+      }
+    )
   }
 
   onSelectNext(){
     this.propertyId += 1;
-    this.router.navigate(['property-detail', this.propertyId]);
+    this.router.navigate(['property-details', this.propertyId]);
   }
 }
