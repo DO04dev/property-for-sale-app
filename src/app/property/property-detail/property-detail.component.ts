@@ -12,7 +12,7 @@ export class PropertyDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
-    this.propertyId = this.route.snapshot.params['Id'];
+    this.propertyId = Number(this.route.snapshot.params['Id']);
   }
 
   onSelectNext(){
