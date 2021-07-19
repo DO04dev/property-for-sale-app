@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './page-not-found/page-not-found/page-not-found.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { HousingService } from './services/housing.service';
@@ -15,7 +16,10 @@ const appRoutes: Routes = [
   { path: '', component: PropertyListComponent },
   { path: 'rent-property', component: AddPropertyComponent },
   { path: 'add-property', component: AddPropertyComponent },
-  { path: 'property-details/:Id', component: PropertyDetailComponent }
+  { path: 'property-details/:Id', component: PropertyDetailComponent },
+  // { path: '**', component: PropertyListComponent }, Redirect to details page
+  { path: '**', component: PageNotFoundComponent}
+
 ];
 
 @NgModule({
@@ -26,7 +30,8 @@ const appRoutes: Routes = [
     NavBarComponent,
     NavBarComponent,
     AddPropertyComponent,
-    PropertyDetailComponent
+    PropertyDetailComponent,
+    PageNotFoundComponent
    ],
   imports: [
     BrowserModule,
