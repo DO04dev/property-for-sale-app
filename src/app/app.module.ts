@@ -14,7 +14,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const appRoutes: Routes = [
   { path: '', component: PropertyListComponent },
-  { path: 'rent-property', component: AddPropertyComponent },
+  { path: 'rent-property', component: PropertyListComponent },
   { path: 'add-property', component: AddPropertyComponent },
   { path: 'property-details/:Id', component: PropertyDetailComponent },
   // { path: '**', component: PropertyListComponent }, Redirect to details page
