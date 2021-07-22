@@ -17,7 +17,7 @@ export class PropertyDetailComponent implements OnInit {
       (params) => {
         this.propertyId = +(params['Id']);
       }
-    )
+    );
   }
 
   onSelectNext(){
